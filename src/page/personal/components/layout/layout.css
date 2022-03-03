@@ -1,0 +1,16 @@
+.Layout{
+    direction: rtl;
+}
+.container{
+    display: flex;
+    margin-right:300px;
+    margin-top: 20px;
+    padding: 20px;
+
+
+}
+.container.active{
+    
+    margin-right:90px;
+
+}

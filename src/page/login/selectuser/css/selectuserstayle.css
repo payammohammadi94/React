@@ -1,0 +1,65 @@
+.Selectuser{
+  flex:4;
+  margin: 20px;
+  padding: 20px;
+}
+
+.style1{color: white;}
+
+
+
+.datalistclass,select{
+  direction: rtl;
+  text-align: right;
+
+}
+
+.Cardborder {
+  padding-top: 3rem;
+  border-radius: 15px 50px;
+}
+
+.Buttonsubmit {
+  width: 20%;
+}
+.backgroundStayle{
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  height:100vh;
+}
+
+.cardd {
+  box-shadow: 1px 9px 10px 20px rgb(0 0 0 / 20%), 0 2px 2px rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.marginTop{
+  margin-top: 50px !important;
+}
+
+.profileLocation{
+   padding-top: 50px;
+   padding-bottom: 50px;
+  }
+
+  .selectUserLocation{
+    padding-top: 200px;
+    padding-bottom: 80px;
+    padding-right: 65px;
+   }
+
+   .widthButton{
+     width: 100px;
+   }
+   
+   .borderRed {
+    border-radius: 2.3rem !important;
+    padding: 2.5rem !important;
+
+}
+
+.maginRight{
+  margin-right: 110px;
+}

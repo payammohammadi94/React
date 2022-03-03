@@ -1,0 +1,39 @@
+.featured{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.featuredItem{
+    flex:1;
+    margin: 0px 20px;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: -1px -3px 16px -4px rgba(0,0,0,0.64); 
+    box-shadow: -1px -3px 16px -4px rgba(0,0,0,0.64);
+}
+
+.featuredTitel{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.featuredDocContainer{
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+.docNumber{
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.docCheced{
+    font-size: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
