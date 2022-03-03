@@ -53,6 +53,7 @@
     font-size:15px;
     display:block;
     font-weight: 600;
+    padding-right: 15px;
 }
 
 .Sidebar-menu .main-menu .menu-item span{
@@ -61,6 +62,7 @@
     line-height: 40px;
     opacity: 1;
     transition: opacity .2s ease-in;
+    padding-right: 2px;
 }
 
 .Sidebar-menu.inactive .main-menu .menu-item span{
@@ -108,4 +110,8 @@
     font-weight: 600px;
     color:#333;
 
+}
+
+.CaretDownFill-loc{
+    left:5%;
 }

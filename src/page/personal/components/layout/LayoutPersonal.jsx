@@ -10,6 +10,7 @@ import Sidebar from '../sidebarPersonal/Sidebar';
 import Home from "../../Home"
 
 const Layoutpersonal = () => {
+    //با تعییر ساز سایدبار.نوشته های وسط صفحه هم تغییر سایز پیدا می‌کنند
     let [containerActive,setContainerActive] = useState(false)
     return (
         <div className="Layout">

@@ -27,18 +27,13 @@ function App() {
     <AuthProvider>
     <Switch>            
       <Route path="/login" component={Login} />
-      <PrivetRoute component={Selectuser} path='/selectuser'></PrivetRoute>              
       <Route path="/forgetpassword" component={Forgetpassword} />
+      
+      <PrivetRoute component={Selectuser} path='/selectuser'></PrivetRoute>              
 
       {/* for show prrsonal */}
-      <PrivetRoute component={Home} path='/home'></PrivetRoute>
       <PrivetRoute component={Layoutpersonal} path='/personal'></PrivetRoute>
     </Switch>
-      {/* <Topbar /> */}
-      <div className="container">
-        {/* <Sidebar /> */}     
-
-      </div>
       </AuthProvider>
     </Router>
 
