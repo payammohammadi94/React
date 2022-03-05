@@ -13,6 +13,7 @@ export default function Forgetpassword(props) {
     <Container className='forgetpassword'>
     
         <form method='post'>
+            <div className='center'>
              <div className='container-fluid'> 
         <div className='row  justify-content-center align-items-center'> 
         <div className='col-8'>
@@ -46,6 +47,7 @@ export default function Forgetpassword(props) {
         
         </div>
         </div>   
+        </div>
         </div>
         </div>
         </form>
