@@ -13,8 +13,9 @@ export default function Forgetpassword(props) {
     <Container className='forgetpassword'>
     
         <form method='post'>
-        <div className='row  cardHeight d-flex justify-content-center'> 
-        <div className='col-md-6'>
+             <div className='container-fluid'> 
+        <div className='row  justify-content-center align-items-center'> 
+        <div className='col-8'>
         <div className="card border-dark mb-3  d-grid col-6 mx-auto " style={{width:"36rem"}}>
         
         <div className="card-header ">
@@ -45,6 +46,7 @@ export default function Forgetpassword(props) {
         
         </div>
         </div>   
+        </div>
         </div>
         </form>
        

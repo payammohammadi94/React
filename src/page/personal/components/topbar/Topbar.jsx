@@ -1,6 +1,6 @@
 
-import React,{useState} from 'react';
-import {  MailOutline, NotificationsNone, Settings } from '@material-ui/icons';
+import React,{useState,useContext} from 'react';
+import {  MailOutline, NotificationsNone, Settings, PowerSettingsNew } from '@material-ui/icons';
 import { useHistory } from 'react-router-dom';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
@@ -9,22 +9,26 @@ import Stack from '@mui/material/Stack';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./topbar.css";
 
+import AuthContext from '../../../../context/AuthContext';
+
 
 export default function Topbar() {
-  let history = useHistory()
   
+  let {logout} = useContext(AuthContext)
+  console.log(logout)
+  let history = useHistory()
   let  path= history.location.pathname
   console.log(path)
   
   let showHour = new Date;
-  showHour=showHour.toTimeString().split(' ')[0].slice(0,5);
+  showHour=showHour.toTimeString().split(' ')[0].slice(0,8);
   const [timeDate,setTimeDate]=useState(showHour)
   
   setInterval(() => {
     let showHour = new Date;
-    showHour=showHour.toTimeString().split(' ')[0].slice(0,5);
+    showHour=showHour.toTimeString().split(' ')[0].slice(0,8);
     setTimeDate(showHour)
-  }, 60000);
+  }, 1000);
 
 //بر ای ایجاپ برد بردکرامبس
   const breadcrumbs = [
@@ -58,8 +62,15 @@ export default function Topbar() {
               </div>
 
               <div className="topbarIconContainer">
-                <Settings />
+                <Link onClick={logout} > <PowerSettingsNew className="pwersetting"/> </Link>
               </div>
+              
+              
+              <div className="topbarIconContainer">
+                <Settings  />
+              </div>
+
+
 
               <div className="topbarIconContainer">
                 <NotificationsNone />
