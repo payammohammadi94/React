@@ -12,10 +12,11 @@ import { ArrowRightSquareFill,
     Check2Circle,
     Archive,
     ClockHistory,
-    House
-}
- from 'react-bootstrap-icons';
-import logo from '../../assets/logo/logo.png'
+    House,
+    List
+} from 'react-bootstrap-icons';
+
+import logo from '../../assets/logo/logo.png';
 
 export default function Sidebar(props) {
     //برای باز و بسته شدن سایدبار
@@ -40,14 +41,14 @@ export default function Sidebar(props) {
     <div className={`Sidebar-menu ${inactive?"inactive": ""}`}>
         <div className="Topsection">
             <div className="logo">
-                <img src={logo} />      
+                {/* <img src={logo} />       */}
             </div>
             <div className="arrowicon" onClick={()=>{setInactive(!inactive);
                 setExpends1(false);
                 setExpends2(false);
                 setExpends3(false);
                 setExpends4(false)}}>
-                {inactive?<ArrowLeftSquareFill /> :<ArrowRightSquareFill /> } 
+                {inactive?<List /> :<List /> } 
             </div>
         </div>
 
@@ -78,7 +79,7 @@ export default function Sidebar(props) {
                     </Link>
                     <ul className={`sub-menu ${expends1?"active":""}`}>
                         <li >
-                            <Link className='sub-menu-item' >ثبت سند</Link>
+                            <Link className='sub-menu-item' to="/personal/documentRegistr">ثبت سند</Link>
                         </li>
                         <li >
                             <Link className='sub-menu-item'>تایید و ویرایش سند</Link>
@@ -102,7 +103,7 @@ export default function Sidebar(props) {
                     </Link>
                     <ul className={`sub-menu ${expends2?"active":""}`}>
                         <li >
-                            <Link className='sub-menu-item' >مشاهده</Link>
+                            <Link className='sub-menu-item' to='/personal/docRetured/docObservation'>مشاهده</Link>
                         </li>
                         <li >
                             <Link className='sub-menu-item'>ویرایش و ثبت</Link>

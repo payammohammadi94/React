@@ -2,12 +2,14 @@
 
 
 .Sidebar-menu{
-    position: fixed;
-    background-color: rgb(201, 102, 201);
+    position: relative;
+    background-color: white;
     width:300px;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
     transition: width 2 ease-in;
+    margin-top: -5px;
+    
 
 }
 
@@ -27,10 +29,11 @@
 .Sidebar-menu .Topsection .logo img{
     max-width:100%;
     max-height: 100px;
+    
 }
 
 .Sidebar-menu .Topsection .arrowicon{
-    color:rgb(184, 8, 8);
+    color:rgb(12, 11, 11);
     display:inline-block;
     position: absolute;
     margin-top: 10px;
@@ -38,9 +41,12 @@
     top: 0;
     left: 0;
     cursor: pointer;
+    font-size: 2em;
+    left:5%
 }
 .Sidebar-menu.inactive .Topsection .arrowicon{
-    left: -20px;
+    left:27px;
+    font-size: 2em;
 }
 
 .divaider{

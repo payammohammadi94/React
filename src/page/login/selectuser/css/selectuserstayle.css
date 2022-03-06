@@ -51,7 +51,7 @@
    }
 
    .widthButton{
-     width: 100px;
+     width: 430px;
    }
    
    .borderRed {
@@ -62,4 +62,13 @@
 
 .maginRight{
   margin-right: 110px;
+}
+
+.rightToleft{
+  float:center;
+}
+
+
+.rightToleftt{
+  text-align: center;
 }

@@ -1,8 +1,8 @@
-body { 
+.Login { 
     background-image: url('./5748.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height:100vh;
 }
  .center {
     padding: 70px 0;
@@ -31,3 +31,11 @@ width: 100px;
 .label{
     padding-right: 5px;
 }
+
+.style-error{
+    text-align: center;
+    color:red;
+    
+    margin-top: 1.5em;
+}
+

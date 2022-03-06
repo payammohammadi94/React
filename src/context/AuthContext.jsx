@@ -1,7 +1,7 @@
 import React,{useState,useEffect,createContext} from 'react'
 import jwt_decode from "jwt-decode";
 import { useHistory } from 'react-router-dom';
-import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+import { Redirect } from 'react-router-dom';
 
 
 const AuthContext = createContext();

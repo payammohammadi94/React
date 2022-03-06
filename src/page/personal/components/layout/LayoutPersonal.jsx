@@ -8,6 +8,9 @@ import  './layout.css';
 import Topbar from '../topbar/Topbar';
 import Sidebar from '../sidebarPersonal/Sidebar';
 import Home from "../../Home"
+import CreateDocument from '../../personalPage/documentRecord/documentRegistration/CreateDocument';
+import DocumentObservation from '../../personalPage/documentReturned/documentObservation/DocumentObservation';
+import Header from '../header/Header';
 
 const Layoutpersonal = () => {
     //با تعییر ساز سایدبار.نوشته های وسط صفحه هم تغییر سایز پیدا می‌کنند
@@ -15,18 +18,28 @@ const Layoutpersonal = () => {
     return (
         <div className="Layout">
             <Router>
+                
                 <div className="Header">
-                    <Topbar /> 
-                </div>
-            
-                <div className="Sidebar">
-                    <Sidebar onCollaps={(inactive)=>{
-                        setContainerActive(inactive)
-                    }}/>
+                    <Header /> 
                 </div>
 
-                <div className={`container ${containerActive?"active":""}`}>
-                    <Route path='/personal/home' component={Home} />
+                <div className='sidebar-layout'>
+                    <div className="Sidebar">
+                        <Sidebar onCollaps={(inactive)=>{
+                            setContainerActive(inactive)
+                        }}/>
+                    </div>
+
+                    <div className={`container ${containerActive?"active":""}`}>
+                        <Route path='/personal/home' component={Home} />
+                        
+                        {/* روت برای ثبت سند */}
+                        <Route path='/personal/documentRegistr' component={CreateDocument} />
+                        
+                        {/* روت برای مشاهده سند بازگشتی */}
+                        <Route path='/personal/docRetured/docObservation' component={DocumentObservation} />
+
+                    </div>
                 </div>
             </Router>
         </div>

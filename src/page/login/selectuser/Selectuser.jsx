@@ -5,7 +5,7 @@ import AuthContext from '../../../context/AuthContext';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./css/selectuserstayle.css";
-
+import logo from './logo.png'
 import logo2 from "./download.jpg";
 
 
@@ -74,7 +74,7 @@ export default function Selectuser(props) {
   const optionSelectUser = choiceDocterDegree.map(item=>{
     
     return(
-      <option value={item.link} key={item.id}>{item.user}</option>
+      <option value={item.link} key={item.id} className="text-item">{item.user}</option>
     )
   })
 ////////////////////////////////////////////////////////////////
@@ -88,61 +88,145 @@ export default function Selectuser(props) {
   }
 ///////////////////////////////////////////////////////////////////
     return (
-      <div className='container-fluid'>
-     <section className='backgroundStayle '>
-        <div className="row ">
-          <div className="card d-grid gap-2 mx-auto  cardd marginTop" style={{width:"72rem"}}>
-            <div class="container">
-                <div className="row profileLocation  justify-content-between">
-                  <div className="  col-7  selectUserLocation">
-                  <label htmlFor="exampleDataList" className="form-label fw-bold fs-5 "> <h4>انتخاب کاربری</h4></label>
-                    <Form.Select className='form-select-lg' onChange={(e)=>{
-                      path = e.target.value;
-                        }}>
-                      {optionSelectUser}
-                    </Form.Select>
-                    
-                    <div className="row mt-3 mb-3">
-                      <div className=" col -4 ">
-                      </div>
-                      <div className=" col-4 ">
-                        <button className="btn btn-primary mt-4 widthButton" type="submit" onClick={()=>gotopage(path)}>ورود</button>
-                      </div>
-                      <div className=" col-4 ">
-                      </div>
+  
+      <section>
+        <div className="container-fluid backgroundStayle">
+          <div className="row justify-content-center align-items-center wb-bg-banner">
+            <div className="col-sm-4 text-center">
+                   
+                    <div className="row">
+                     <div className="col-md-7 mx-auto my-5">
+                         <img src={logo} className=" ml-3 " style={{width:"100%"}}/>
+                   </div>
                     </div>
+                    <br/>
                     
-                </div>
-                  <div className="  col-3  maginRight">
-                      <Card style={{ width: '18rem' }} className='card border-primary borderRed'>
-                        <Card.Img variant="top" src={logo2} />
-                        <Card.Body className='text-center'>
-                          <Card.Text>
-                            نام و نام خانوادگی: محمد محمدی
-                          </Card.Text>
-                          <Card.Text>
-                            نام کاربری: {user.username}
-                          </Card.Text>
-                          <Card.Text>
-                            سمت: غواص
-                          </Card.Text>
+                    
+             
+                             <div class="mb-3">
+                               <label for="exampleInputEmail1" class="form-label">
+                                 <h3 className='mb-4'>
+                                 انتخاب نوع کاربری 
+                                 </h3>
+                                 </label>
+                               <Form.Select className='form-select-lg rightToleft rightToleftt' onChange={(e)=>{
+                                 path = e.target.value;
+                                   }}>
+                                 {optionSelectUser}
+                             </Form.Select> 
 
-                          <Card.Text>
-                            شماره پرسنلی: {user.user_id}
-                          </Card.Text>
-                        </Card.Body>
-                    </Card>
-                  </div>
-                </div>
+                             </div>
+                             <button className="btn btn-primary mt-4 widthButton" type="submit" onClick={()=>gotopage(path)}>ورود</button> 
             </div>
-                
           </div>
         </div>
-        
-     </section>
-     </div>
+      </section>
 
-
+    
     )
 }
+
+
+  // <section>
+
+       
+
+  //       <div class="container-fluid backgroundStayle">
+  //         <div class="row justify-content-center align-items-center wb-bg-banner">
+  //           <div class="col-4 text-center ">
+           
+                     
+                        
+  //                         <div className="  selectUserLocation">   
+  //                          {/* logo */}
+  //                   <div className="row">
+  //                     <div className="col-md-8 mx-auto my-5">
+  //                         <img src={logo} className=" ml-3 " style={{width:"100%"}}/>
+  //                     </div>
+  //                   </div>
+  //                   <br/>
+  //                   {/* logo */}
+                          
+                        
+  //                           <div class="mb-3">
+  //                             <label for="exampleInputEmail1" class="form-label">
+  //                               <h3 className='mb-4'>
+  //                               انتخاب نوع کاربری 
+  //                               </h3>
+  //                               </label>
+  //                             <Form.Select className='form-select-lg rightToleft rightToleftt' onChange={(e)=>{
+  //                               path = e.target.value;
+  //                                 }}>
+  //                               {optionSelectUser}
+  //                             </Form.Select> 
+
+  //                           </div>
+  //                           <button className="btn btn-primary mt-4 widthButton" type="submit" onClick={()=>gotopage(path)}>ورود</button> 
+
+                          
+        
+                            
+  //                       </div>
+                         
+                        
+                    
+                        
+
+
+  //           </div>   
+  //         </div>
+  //         </div>
+  //     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+{/* <label htmlFor="exampleDataList" className="form-label fw-bold fs-5 "> <h4>انتخاب کاربری</h4></label> */}
+
+
+
+{/* <div className="  col-3  maginRight">
+<Card style={{ width: '18rem' }} className='card border-primary borderRed'>
+  <Card.Img variant="top" src={logo2} />
+  <Card.Body className='text-center'>
+    <Card.Text>
+      نام و نام خانوادگی: محمد محمدی
+    </Card.Text>
+    <Card.Text>
+      نام کاربری: {user.username}
+    </Card.Text>
+    <Card.Text>
+      سمت: غواص
+    </Card.Text>
+
+    <Card.Text>
+      شماره پرسنلی: {user.user_id}
+    </Card.Text>
+  </Card.Body>
+</Card>
+</div> */}
+  
+   
 

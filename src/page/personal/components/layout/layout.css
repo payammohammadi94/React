@@ -1,16 +1,16 @@
 .Layout{
     direction: rtl;
 }
-.container{
+
+.sidebar-layout{
     display: flex;
-    margin-right:300px;
-    margin-top: 20px;
-    padding: 20px;
-
-
-}
-.container.active{
+    width:100%;
     
-    margin-right:90px;
+}
+.container{
+    width: 100%;
 
 }
+
+
+

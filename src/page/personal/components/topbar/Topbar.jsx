@@ -15,10 +15,9 @@ import AuthContext from '../../../../context/AuthContext';
 export default function Topbar() {
   
   let {logout} = useContext(AuthContext)
-  console.log(logout)
   let history = useHistory()
   let  path= history.location.pathname
-  console.log(path)
+ 
   
   let showHour = new Date;
   showHour=showHour.toTimeString().split(' ')[0].slice(0,8);

@@ -13,8 +13,8 @@ export default function Login() {
 
   return (
     
-    <div className="Login">
-      <div className="container-fluid">
+    
+      <div className="container-fluid Login">
       {/* logo */}
       <div className="row">
         <div className="col-md-3 mx-auto my-5">
@@ -24,13 +24,7 @@ export default function Login() {
       <br/>
       {/* logo */}
 
-      <div className="row">
-        <div className="d-grid gap-2 col-md-3 mx-auto">
-          {loginUserField && 
-            <h6 style={{color:"red"}}> .نام کاربری یا رمز عبور اشتباه است</h6>
-          }
-        </div>
-    </div>
+
 
       <form onSubmit={loginUser}>
         <div className="row">
@@ -45,16 +39,28 @@ export default function Login() {
           </div>
           </div>
       </div> 
+    
+      <div className="row">
+          <div className="d-grid gap-2 col-md-3 mx-auto">
+            {loginUserField && 
+                <div className="style-error">
+                  <span className="wrong-class">
+                  نام کاربری یا رمز عبور اشتباه است.
+                  </span>
+                </div>
+            }
+          </div>
+      </div>
 
       <div className="row">
         <div className="d-grid gap-2 col-md-4 mx-auto mt-5">
           <button className="btn btn-primary" type="submit">ورود</button>
         </div>
     </div>
+    
    </form>
 
    </div>
-      </div>
   );
 }
 

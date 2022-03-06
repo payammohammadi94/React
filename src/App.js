@@ -2,7 +2,8 @@ import React from 'react'
 import {
   BrowserRouter as Router,
   Route ,
-  Switch
+  Switch,
+  Redirect
 } from "react-router-dom";
 
 import PrivetRoute from "./utils/PrivetRoute";
@@ -25,9 +26,14 @@ function App() {
     <div className='App'>
     <Router>
     <AuthProvider>
-    <Switch>            
+    <Switch>
+
       <Route path="/login" component={Login} />
       <Route path="/forgetpassword" component={Forgetpassword} />
+      
+      <Route exact path="/">
+         <Redirect to="/login" /> 
+      </Route>
       
       <PrivetRoute component={Selectuser} path='/selectuser'></PrivetRoute>              
 
