@@ -1,4 +1,7 @@
 import React,{useState,useContext} from 'react';
+import * as shamsi from 'shamsi';
+
+
 import {  MailOutline, NotificationsNone, Settings, PowerSettingsNew } from '@material-ui/icons';
 import { useHistory } from 'react-router-dom';
 import Link from '@mui/material/Link';
@@ -21,6 +24,7 @@ export default function Header() {
   
   setInterval(() => {
     let showHour = new Date;
+    console.log(shamsi.gregorianToJalali(1997,5,2).join('/'))
     showHour=showHour.toTimeString().split(' ')[0].slice(0,8);
     setTimeDate(showHour)
   }, 1000);

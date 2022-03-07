@@ -101,9 +101,9 @@ export default function Selectuser(props) {
                     </div>
                     <br/>
                     
-                    
-             
-                             <div class="mb-3">
+                    <div className="row">
+                     <div className="col-md-12 mx-auto my-5">
+                     <div class="mb-3">
                                <label for="exampleInputEmail1" class="form-label">
                                  <h3 className='mb-4'>
                                  انتخاب نوع کاربری 
@@ -116,7 +116,16 @@ export default function Selectuser(props) {
                              </Form.Select> 
 
                              </div>
-                             <button className="btn btn-primary mt-4 widthButton" type="submit" onClick={()=>gotopage(path)}>ورود</button> 
+                   </div>
+                    </div>
+                    <div className="row">
+                      <div className="d-grid gap-2 col-md-12 mx-auto">
+                      <button className="btn btn-primary  btn-lg" type="submit" onClick={()=>gotopage(path)}>ورود</button>  
+                      </div>
+                  </div>
+                   
+                            
+                            
             </div>
           </div>
         </div>

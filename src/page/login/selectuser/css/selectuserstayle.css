@@ -23,7 +23,7 @@
   width: 20%;
 }
 .backgroundStayle{
-  background-image: url('./background.jpg');
+  background-image: url('./background.png');
   background-repeat: no-repeat;
   background-size:cover;
   height:100vh;
@@ -51,7 +51,7 @@
    }
 
    .widthButton{
-     width: 430px;
+     width: 460px;
    }
    
    .borderRed {
