@@ -89,8 +89,8 @@
 }
 
 .Clock{
- 
-  padding: 10px; 
+  padding-left: 20px;
+  padding-top: 0;
 
 }
 
@@ -110,17 +110,28 @@
 }
 
 
-
-
 .marinRight{
   margin-right: 10px;
 }
 
 .xxx{
   margin-bottom: 5px;
+  display: flex;
+  place-content: space-between;
 }
 
 .logoclass{
-  height: 50px;
+  height: 60px;
   
+}
+
+.bred-crumb {
+  text-decoration: none;
+  color:#000;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.py-3{
+  padding-bottom: 0px !important;
 }

@@ -1,16 +1,15 @@
 import React,{useState,useContext} from 'react';
 import {  MailOutline, NotificationsNone, Settings, PowerSettingsNew } from '@material-ui/icons';
 import { useHistory } from 'react-router-dom';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
-import Stack from '@mui/material/Stack';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 import AuthContext from '../../../../context/AuthContext';
 
 import logo from "../../../../assets/header-falat2.png"
-export default function Header() {
+export default function Header() {  
+  
   let {logout} = useContext(AuthContext)
   let history = useHistory()
   let  path= history.location.pathname
@@ -26,26 +25,7 @@ export default function Header() {
     setTimeDate(showHour)
   }, 1000);
 
-//بر ای ایجاپ برد بردکرامبس
-  const breadcrumbs = [
-    <Link underline="hover" key="1" color="inherit" href="/selectuser" 
-    // onClick={handleClick}
-    >
-      انتخاب کاربری
-    </Link>,
-    <Link
-      underline="hover"
-      key="2"
-      color="inherit"
-      href="/personal/home"
-      // onClick={handleClick}
-    >
-      داشبورد
-    </Link>,
-    <Typography key="3" color="text.primary">
-      Breadcrumb
-    </Typography>,
-  ];
+
 
   return (
     <div>
@@ -64,7 +44,7 @@ export default function Header() {
                   </li>
                 </ul>
                 <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active">انتخاب ناحیه کاربری</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active">پیام محمدی</a></li>
                 </ul>
             </div>
         </nav>
@@ -73,9 +53,6 @@ export default function Header() {
               <div class="container d-flex flex-wrap">                
                   <ul class="nav">
                     <li class="nav-item"> 
-                      {/* <div className="Clock">
-                        <span className='clockShow'>{`${timeDate}`}</span>
-                      </div> */}
                       <img src={logo} className="logoclass" alt="" />
                     </li>
                   </ul>
@@ -110,11 +87,17 @@ export default function Header() {
 
         <header class="py-3  border-bottom xxx">
             <div class="d-flex flex-wrap justify-content marinRight">
-            <Stack spacing={2} style={{direction: "rtl"}}>
-                <Breadcrumbs separator="›" aria-label="breadcrumb">
-                  {breadcrumbs}
-                </Breadcrumbs>
-              </Stack>   
+              <nav className='bred-crumb'>
+                <a className='bred-crumb'> انتخاب ناحیه کاربری </a>
+                
+                <span >  &#62;  </span>
+                
+                <a className='bred-crumb'> سامانه مدیریت اسناد شخصی </a>
+              </nav>
+            </div>
+            
+             <div className="Clock">
+                <span className='clockShow'>{`${timeDate}`}</span>
             </div>
         </header>
 

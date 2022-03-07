@@ -12,33 +12,31 @@ export default function DocumentObservation() {
         </div>
         
         <div className="Table">
-          <table class="table table-striped Table">
+          <table class="table table-striped">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">ردیف</th>
+                <th scope="col">شماره سند</th>
+                <th scope="col">شماره پرسنلی</th>
+                <th scope="col">نام و نام خانوادگی</th>
+                <th scope="col">تاریخ سند</th>
+                <th scope="col">نوع نسخه</th>
+                <th scope="col">مبلغ</th>
+                <th scope="col">دلیل برگشت</th>
+                <th scope="col">تاریح برگشت</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
+                <td>15</td>
+                <td>15712458</td>
+                <td>پیام محمدی</td>
+                <td>14/12/1399</td>
+                <td>سرئایی</td>
+                <td>5500000</td>
+                <td>مشکل تاریخ سند</td>
+                <td>15/10/1400</td>
               </tr>
             </tbody>
           </table>

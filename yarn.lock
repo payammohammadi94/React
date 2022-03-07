@@ -8364,6 +8364,18 @@ shallowequal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
+shamsi-date-converter@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/shamsi-date-converter/-/shamsi-date-converter-1.0.5.tgz#625dee6129ab9137220af2d2d2794b356826104d"
+  integrity sha512-Ip8E6WkSs7aa1Uud9jTuMpegIFU/9mOQBli6tTriBaaYU2ckuzXxZuJus24XtmW5EkXY7tieFBpsrAPD9N2nLQ==
+  dependencies:
+    shamsi "^1.1.6"
+
+shamsi@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/shamsi/-/shamsi-1.1.6.tgz#9f08b3d8974d3990cdd6987a9ff9f7da88198b80"
+  integrity sha512-lTXsWGlPxY+AdkcoCJdwy4cFlqeULk0uPEBx+Mh7QIYEyfc+oPRFiChoxDHU3t2F2sL5J8gDJ6moD5sunOrWpg==
+
 shebang-command@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-2.0.0.tgz#ccd0af4f8835fbdc265b82461aaf0c36663f34ea"
