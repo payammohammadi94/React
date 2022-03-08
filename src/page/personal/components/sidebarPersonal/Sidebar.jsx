@@ -38,7 +38,7 @@ export default function Sidebar(props) {
     props.onCollaps(inactive)
 
   return (
-    <div className={`Sidebar-menu ${inactive?"inactive": ""}`}>
+    <div className={`Sidebar-menu side ${inactive?"inactive": ""}`}>
         <div className="Topsection">
             <div className="logo">
                 {/* <img src={logo} />       */}

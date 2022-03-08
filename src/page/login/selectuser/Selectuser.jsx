@@ -95,14 +95,14 @@ export default function Selectuser(props) {
             <div className="col-sm-4 text-center">
                    
                     <div className="row">
-                     <div className="col-md-7 mx-auto my-5">
+                     <div className="col-md-7 mx-auto my-4">
                          <img src={logo} className=" ml-3 " style={{width:"100%"}}/>
                    </div>
                     </div>
                     <br/>
                     
                     <div className="row">
-                     <div className="col-md-12 mx-auto my-5">
+                     <div className="col-md-12 mx-auto my-3e">
                      <div class="mb-3">
                                <label for="exampleInputEmail1" class="form-label">
                                  <h3 className='mb-4'>
@@ -118,7 +118,7 @@ export default function Selectuser(props) {
                              </div>
                    </div>
                     </div>
-                    <div className="row">
+                    <div className="row mb-3">
                       <div className="d-grid gap-2 col-md-12 mx-auto">
                       <button className="btn btn-primary  btn-lg" type="submit" onClick={()=>gotopage(path)}>ورود</button>  
                       </div>

@@ -39,3 +39,7 @@ width: 100px;
     margin-top: 1.5em;
 }
 
+.forget{
+    text-decoration: underline;
+    cursor: pointer;
+}

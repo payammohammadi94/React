@@ -12,14 +12,14 @@ export default function Forgetpassword(props) {
         <section>
         <div class="container-fluid backgroundStayle">
           <div class="row justify-content-center align-items-center wb-bg-banner">
-            <div class="col-10 text-center ">
-        <div className="card border-dark mb-3  d-grid col-6 mx-auto " style={{width:"36rem"}}>
+
+        <div className="card border-dark mb-3  d-grid col-6 mx-auto Border" style={{width:"45rem"}}>
         
-        <div className="card-header ">
-            <h5>بازیابی کلمه عبور</h5>
+        <div className="mt-3 Text ">
+            <h3>بازیابی کلمه عبور</h3>
         </div>
         <div className="card-body text-dark">
-            <h6 className="card-title mb-5">برای بازیابی اطلاعات خواسته شده را وارد کنید.</h6>
+            <h6 className="card-title mb-4">برای بازیابی اطلاعات خواسته شده را وارد کنید.</h6>
             <div className="row mb-3">
             <label for="colFormLabel" className="col-sm-4 col-form-label">کد ملی</label>
             <div className="col-sm-8">
@@ -32,26 +32,27 @@ export default function Forgetpassword(props) {
                 <input type="text" className="form-control" id="colFormLabel" placeholder="لطفا شماره موبایل خود را وارد کنید." />
             </div>
             </div>
-            <p className="card-text">پس از تایید صحت و ارسال  اطلاعات وارد شده رمز عبور جدید برای شما به صورت پیامک ارسال خواهد شد.</p>
+            <p className="card-text">پس از ارسال  و تایید صحت اطلاعات وارد شده، رمز عبور جدید برای شما به صورت پیامک ارسال خواهد شد.</p>
         </div>
         <div className="row m-3">
-
-            <button type="submit" className="btn btn-primary" onClick={()=>changepage()}>
+          
+            <button type="submit" className="btn btn-primary mb-3 " onClick={()=>changepage()}>
                ارسال اطلاعات
             </button>
+        
         </div>
         
         </div>
         </div>   
             </div>
-          </div>
+        
       </section>
 
     )
 }
 {/* <div class='container-fluid'>
         <div className='row justify-content-center'> 
-        <div className='col-md-6'>
+        <div className='col-sm-6'>
         <div className="card border-dark mb-3  d-grid col-6 mx-auto " style={{width:"36rem"}}>
         
         <div className="card-header ">

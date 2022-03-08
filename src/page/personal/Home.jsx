@@ -7,10 +7,21 @@ export default function Home() {
   return (
     <>
 
-    <div className='Home'>
-        <Featuredinfo />
-        <Charts />
-    </div>
+<div className="container-fluid ">
+          <div class="row justify-content-center align-items-center  mt-3">
+  
+               <div className='Home'>
+                    <Featuredinfo />
+                    <Charts />
+                    <Charts />
+              </div>
+          
+          </div>
+  </div>
+
+
+    
+  
     </>
   )
 }

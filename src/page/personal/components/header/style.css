@@ -97,7 +97,16 @@
 .clockShow{
   color:rgb(19, 18, 18);
   font-size:17px;
+  position: static;
   
+  
+}
+
+.DateShow{
+  color:rgb(19, 18, 18);
+  font-size:17px;
+  padding-left: 1em;
+  position: static;
 }
 
 .pwersetting{

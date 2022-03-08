@@ -11,21 +11,47 @@ import './style.css';
 import AuthContext from '../../../../context/AuthContext';
 
 import logo from "../../../../assets/header-falat2.png"
+
 export default function Header() {  
   
+  let month = {
+    1:"فروردین",
+    2:"اردیبهشت",
+    3:"خرداد",
+    4:"تیر",
+    5:"مرداد",
+    6:"شهریور",
+    7:"مهر",
+    8:"آبان",
+    9:"آذر",
+    10:"دی",
+    11:"بهمن",
+    12:"اسفند",
+  };
+  
+  
+  
+  
   let {logout} = useContext(AuthContext)
-  let history = useHistory()
-  let  path= history.location.pathname
+  
+  // let history = useHistory()
+
  
   
-  let showHour = new Date;
-  showHour=showHour.toTimeString().split(' ')[0].slice(0,8);
-  const [timeDate,setTimeDate]=useState(showHour)
   
+  let showHour = new Date();
+  showHour = showHour.toTimeString().split(' ')[0];
+  let [timeDate,setTimeDate]=useState(showHour)
+  
+  let showDate = new Date
+  showDate = showDate.toLocaleDateString().split('/')
+  let finalDate = shamsi.gregorianToJalali(parseInt(showDate[2]), parseInt(showDate[0]), parseInt(showDate[1]))
+  let DateforShow = finalDate[2].toString() + " / "+ month[finalDate[1]].toString() + " / " + finalDate[0].toString()
+  
+
   setInterval(() => {
-    let showHour = new Date;
-    console.log(shamsi.gregorianToJalali(1997,5,2).join('/'))
-    showHour=showHour.toTimeString().split(' ')[0].slice(0,8);
+    let showHour = new Date();
+    showHour = showHour.toTimeString().split(' ')[0];
     setTimeDate(showHour)
   }, 1000);
 
@@ -99,9 +125,10 @@ export default function Header() {
                 <a className='bred-crumb'> سامانه مدیریت اسناد شخصی </a>
               </nav>
             </div>
-            
+
              <div className="Clock">
-                <span className='clockShow'>{`${timeDate}`}</span>
+                <span className='DateShow'>{`${DateforShow}` }</span>
+                <span className='clockShow'> {`${timeDate}`}</span>
             </div>
         </header>
 

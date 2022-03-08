@@ -1,5 +1,6 @@
 import React, { useContext,useState,useEffect } from "react";
 import { Lock, Person } from '@material-ui/icons'
+import {Link} from 'react-router-dom'
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.png';
@@ -23,7 +24,7 @@ export default function Login() {
       <div className="container-fluid Login">
       {/* logo */}
       <div className="row">
-        <div className="col-md-3 mx-auto my-5">
+        <div className="col-md-3 mx-auto my-4">
             <img src={logo} className=" ml-3 " style={{width:"100%"}}/>
         </div>
       </div>
@@ -61,8 +62,14 @@ export default function Login() {
       </div>
 
       <div className="row">
-        <div className="d-grid gap-2 col-md-4 mx-auto mt-5">
+        <div className="d-grid gap-2 col-md-4 mx-auto mt-4">
            <button className="btn-lg btn-primary" type="submit" onClick={()=>{setLoading(true)}}>{loading==false?"ورود": <span><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> لطفا شکیبا باشید... </span>}</button>
+          
+        </div>
+    </div>
+    <div className="row">
+        <div className="d-grid gap-2 col-md-4 mx-auto mt-2">
+           <Link className="forget" to="/forgetpassword">فراموشی رمز عبور</Link>
           
         </div>
     </div>
