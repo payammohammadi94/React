@@ -11,7 +11,7 @@ import Home from "../../Home"
 import CreateDocument from '../../personalPage/documentRecord/documentRegistration/CreateDocument';
 import DocumentObservation from '../../personalPage/documentReturned/documentObservation/DocumentObservation';
 import Header from '../header/Header';
-
+import PeriodicVisit from '../../personalPage/forms/periodicVisits/PeriodicVisit';
 const Layoutpersonal = () => {
     //با تعییر ساز سایدبار.نوشته های وسط صفحه هم تغییر سایز پیدا می‌کنند
     let [containerActive,setContainerActive] = useState(false)
@@ -38,7 +38,9 @@ const Layoutpersonal = () => {
                         
                         {/* روت برای مشاهده سند بازگشتی */}
                         <Route path='/personal/docRetured/docObservation' component={DocumentObservation} />
-
+                        
+                        {/* قسمت روت فرم های اپ شخصی */}
+                        <Route path='/personal/forms/periodicVisit' component={PeriodicVisit} />
                     </div>
                 </div>
             </Router>
